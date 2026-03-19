@@ -26,16 +26,6 @@ import stat
 from datetime import datetime
 
 
-# ── colors ────────────────────────────────────────────────────
-# ANSI escape codes wrapped in a class so we can strip them all
-# at once when the terminal doesn't support them.
-#
-# Windows note: cmd.exe and older PowerShell don't process ANSI
-# codes by default — they just print the raw escape characters
-# (the ←[96m garbage). We fix this two ways: try to enable VT mode
-# via the Windows console API, and fall back to no-color if that
-# doesn't work. Either way, no garbled output.
-
 def _enable_windows_ansi():
     
     if platform.system() != "Windows":
