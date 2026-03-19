@@ -15,9 +15,11 @@ No pip install. No dependencies. Just Python.
  
 Download the file and run it:
  
-```
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/radar/main/radar.py
+``` 
+curl -O https://raw.githubusercontent.com/ramtin2e/radar-vulnscanner/main/radar.py
 python3 radar.py
+
+(or grab the radar.py manually)
 ```
  
 Requires Python 3.8+. That's it.
